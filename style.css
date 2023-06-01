@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+main {
+  background-color: var(--background);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+#login {
+  background-color: var(--form-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  padding: 2rem 5rem;
+}
+.cabesa {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.cabesa h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-title);
+  font-family: Poppins, sans-serif;
+}
+.cabesa h4 {
+  color: var(--text-base);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+}
+form {
+  width: 100%;
+}
+.input-section {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
+  color: var(--text-base);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+.input {
+  width: 100%;
+  padding: 14px 38px;
+  background: transparent;
+  border: 1px solid #868686;
+  border-radius: 4px;
+}
+.input::placeholder {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #a9afb9;
+}
+.input-icon {
+  position: relative;
+  width: 100%;
+}
+.icon-input {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.check {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: transparent;
+}
+#checkboxx {
+  border: 1px solid #868686;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+.checkmarker {
+  background-color: var(--form-background);
+}
