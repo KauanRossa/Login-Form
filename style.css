@@ -71,6 +71,7 @@ form {
   background: transparent;
   border: 1px solid #868686;
   border-radius: 4px;
+  border: 2px solid #FFC632;
 }
 .input::placeholder {
   font-family: Roboto, sans-serif;
@@ -88,18 +89,41 @@ form {
   top: 50%;
   transform: translateY(-50%);
 }
-.check {
+.fotter{
+  display: flex;
+  text-align: start;
+  top: 20px;
+}
+.checks {
   width: 20px;
   height: 20px;
   border-radius: 4px;
   background: transparent;
 }
-#checkboxx {
-  border: 1px solid #868686;
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
+.check-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
-.checkmarker {
-  background-color: var(--form-background);
+.check-section a{
+  color: #FFC632;
+  text-decoration: none;
+  
+}
+.fotter a{
+  text-align:right ;
+}
+ #botao{
+  margin: 0 auto;
+}
+#botao button{
+  width: 334px;
+  height: 51px;
+  border-radius: 4px;
+  background-color: #FFC632;
+  border: none;
+  font-size: 18px;
+  font: 600;
+  color: #473404;
 }
