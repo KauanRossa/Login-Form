@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <main>
-      <img src="./assets/logo.svg" alt="" class="logo" />
-      <div id="login">
-        <div class="cabesa">
-          <h1><img src="./assets/log-in.svg" alt="" /> Faca seu login</h1>
-          <h4>Entre com suas informações de cadastro.</h4>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <img src="./assets/logo.svg" alt="" class="logo" />
+    
+    <div id="login">
+      <div class="cabesa">
+        <h1><img src="./assets/log-in.svg" alt="" /> Faca seu login</h1>
+        <h4>Entre com suas informações de cadastro.</h4>
+      </div>
+      <form>
+        <div class="input-section" onsubmit="return validarFormulario()">
+          <label for="email">E-mail</label>
+          <div class="input-icon">
+            <input type="text" id="email" placeholder="Digite seu e-mail" class="input" />
+            <img class="icon-input" src="./assets/mail.svg" alt="" />
+          </div>
         </div>
-        <form>
-          <div class="input-section">
-            <label for="email">E-mail</label>
-            <div class="input-icon">
-              <input
-                type="text"
-                id="email"
-                placeholder="Digite seu e-mail"
-                class="input"
-              />
-              <img class="icon-input" src="./assets/mail.svg" alt="" />
-            </div>
+        <div class="input-section">
+          <label for="senha">Senha</label>
+          <div class="input-icon">
+            <input type="password" placeholder="Digite seu senha" id="senha" class="input" />
+            <img class="icon-input" src="./assets/lock.svg" alt="" />
+            <img class="icon-senha" src="./assets/eye.svg" alt=""/>
           </div>
-          <div class="input-section">
-            <label for="senha">Senha</label>
-            <div class="input-icon">
-              <input
-                type="password"
-                placeholder="Digite seu senha"
-                id="senha"
-                class="input"
-              />
-              <img class="icon-input" src="./assets/lock.svg" alt="" />
-            </div>
-          </div>
-        </form>
-        <div class="fotter">
-          <div class="check-section">
-            <input type="checkbox" id="check" name="checks" />
+        </div>
+      </form>
+      <div class="fotter">
+        <div class="check-section">
+          <input type="checkbox" id="check" name="checks" />
+          <div class="tutu">
             <label for="check">Lembre-se</label>
           </div>
-          <a href="#">Esqueci minha senha</a>
-          
+          <div class="esqueci">
+            <a href="#">Esqueci minha senha</a>
+          </div>
         </div>
-        <div id="botao">
+      </div>
+      <div id="botao">
         <button>Entrar</button>
-        </div>
+      
         <p>Não tem uma conta?<a href="#">Registre-se</a></p>
       </div>
-    </main>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+    </div>
+    
+    </div>
+    <div id="back">
+      <img src="./assets/side-image.jpg" id="carro" alt="">
+    </div>
+
+  </main>
+  <script src="./script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
